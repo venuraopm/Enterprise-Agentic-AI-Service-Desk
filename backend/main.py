@@ -1,29 +1,22 @@
 from fastapi import FastAPI
+from app.api.health import router as health_router
 
 app = FastAPI(
-    title="AI Service Desk",
-    version="1.0"
+    title="Enterprise AI Service Desk",
+    description="Enterprise AI Service Desk powered by Agentic AI",
+    version="1.0.0",
+
 )
+
+app.include_router(health_router)
+
 
 @app.get("/")
 def home():
 
     return {
 
-        "message":"AI Service Desk Running"
+        "message":"Welcome to Enterprise AI Service Desk"
 
     }
 
-
-@app.post("/incident")
-def create_incident(issue:str):
-
-    return {
-
-        "ticket_id":"INC000001",
-
-        "issue":issue,
-
-        "status":"Open"
-
-    }
