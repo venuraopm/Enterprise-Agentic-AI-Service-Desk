@@ -1,104 +1,109 @@
 # Enterprise Agentic AI Service Desk
 
-## Day 01 – Environment Setup
+## Project Journal
 
-Version: v0.1.0
+### Day 01 – Environment Setup
 
-Date: 11-Jul-2026
+**Version:** v0.1.0
 
-Author: Venugopalarao Pandluri
+**Date:** 11-Jul-2026
+
+**Author:** Venugopalarao Pandluri
 
 ---
 
 # Objective
 
-Build the project foundation and development environment.
+Establish the development environment and create the foundational architecture for the Enterprise Agentic AI Service Desk application.
 
 ---
 
 # Activities Completed
 
-✔ Project folder structure
-
-✔ Python Virtual Environment
-
-✔ FastAPI Installation
-
-✔ Uvicorn Installation
-
-✔ Ollama Installation
-
-✔ ChromaDB Installation
-
-✔ Swagger Validation
-
-✔ API Creation
-
----
-
-# APIs
-
-GET /
-
-POST /incident
-
----
-
-# Validation
-
-FastAPI running successfully.
-
-Swagger accessible.
-
-Virtual Environment activated.
-
-Dependencies installed.
-
----
-
-# Challenges
-
-Problem
-
-Uvicorn not recognized.
-
-Resolution
-
-Activated backend virtual environment.
-
----
-
-# Lessons Learned
-
-- Importance of Virtual Environment
-- FastAPI auto documentation
-- Swagger Testing
-- Project organization
+- Created the project folder structure.
+- Configured the Python Virtual Environment.
+- Installed FastAPI.
+- Installed Uvicorn.
+- Installed Ollama.
+- Installed ChromaDB.
+- Validated Swagger UI.
+- Developed the initial REST APIs.
 
 ---
 
 # Deliverables
 
-Backend
+- Backend application initialized
+- FastAPI framework configured
+- Swagger API documentation enabled
+- Python virtual environment configured
+- Required dependencies installed
+- Enterprise project structure created
 
-Swagger
+---
 
-API
+# APIs Implemented
 
-Dependencies
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| GET | `/` | Application Home |
+| POST | `/incident` | Sample Incident API |
 
-Folder Structure
+---
+
+# Validation Results
+
+| Item | Status |
+|------|--------|
+| FastAPI Startup | ✅ Successful |
+| Swagger UI | ✅ Accessible |
+| Virtual Environment | ✅ Configured |
+| Dependency Installation | ✅ Successful |
+
+---
+
+# Technical Challenges
+
+### Issue
+
+`uvicorn` command was not recognized.
+
+### Root Cause
+
+The backend virtual environment was not activated.
+
+### Resolution
+
+Activated the project virtual environment and executed the application using the correct interpreter.
+
+---
+
+# Key Learnings
+
+- Importance of Python Virtual Environments
+- FastAPI project initialization
+- Swagger-based API testing
+- Enterprise project organization
+- Dependency management
+
+---
+
+# Git Activities
+
+- Project initialized
+- Source code committed
+- GitHub repository created
 
 ---
 
 # Day 01 Status
 
-Completed
+**Status:** ✅ Completed
 
-Completion: 100%
+**Completion:** **100%**
 
 ---
 
-# Next Day
+# Next Milestone
 
-Build Enterprise Agent Architecture.
+Build the Enterprise Backend Architecture and modular FastAPI project structure.
