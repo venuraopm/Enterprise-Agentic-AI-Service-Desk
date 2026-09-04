@@ -21,6 +21,8 @@ This endpoint tells whether the application is alive and ready to serve requests
 
 from fastapi import APIRouter
 
+from app.core.config import settings
+
 router = APIRouter(
     prefix="/health",
     tags=["Health"]
@@ -37,6 +39,6 @@ def health_check():
     """
     return {
         "status": "Healthy",
-        "application": "Enterprise AI Service Desk",
-        "version": "1.0.0"
+        "application": settings.app_name,
+        "version": settings.app_version,
     }
