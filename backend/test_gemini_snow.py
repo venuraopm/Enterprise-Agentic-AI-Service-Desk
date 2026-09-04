@@ -1,8 +1,12 @@
 import os
 from dotenv import load_dotenv
 from google import genai
+import pytest
 
 load_dotenv()
+
+if os.getenv("CI"):
+    pytest.skip("Skipping Gemini tests in CI", allow_module_level=True)
 
 api_key = os.getenv("GEMINI_API_KEY")
 
