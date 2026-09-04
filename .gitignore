@@ -18,6 +18,7 @@ frontend/dist/
 
 # Database
 *.db
+!database/.gitkeep
 
 # ChromaDB
 database/chroma_db/
