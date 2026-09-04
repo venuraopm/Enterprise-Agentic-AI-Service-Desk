@@ -22,6 +22,9 @@ jobs:
           pip install -r requirements.txt
           pip install ruff pytest
 
+      - name: Auto-fix linting issues
+        run: ruff check . --fix
+
       - name: Run linting
         run: ruff check .
 
